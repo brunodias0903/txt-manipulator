@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manipulador de arquivos TXT</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Manipulador de arquivos TXT</h1>
+
+      <button class="send-archive-button" onclick="openFile()">
+        Clique aqui para enviar seu arquivo txt
+      </button>
+
+      <textarea></textarea>
+
+      <input type="file" id="fileInput" accept=".txt" style="display: none" />
+
+      <div class="buttons">
+        <button id="saveFileBtn" disabled>Salvar arquivo</button>
+        <button id="downloadOriginalBtn" disabled>Baixar original</button>
+      </div>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>
